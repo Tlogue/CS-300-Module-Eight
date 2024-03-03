@@ -1,0 +1,32 @@
+//Runtime Analysis Chart//
+
+Tree Data Structure	Line Cost	#Times Execute	Total Cost
+Load Data Structure	1	1	1
+Print Course List	1	1	1
+Print Course	1	1	1
+For each prerequisite	n	n	n
+Print prerequisite	1	n	n
+Total Cost			3n + 1
+Runtime			O(n)
+
+
+
+Hash Table Data Structure	Line Cost	#Times Execute	Total Cost
+Load Data Structure	1	1	1
+Print Course List	1	1	1
+Print Course	1	1	1
+For each prerequisite  	n	n	n
+Print prerequisite	1	n	n
+Total Cost			3n+1
+Runtime			O(n)  
+
+
+
+Vector Data Structure	Line Cost	#Times Execute	Total Cost
+Load Data Structure	1	1	1
+Print Course List	1	1	1
+Print Course	1	1	1
+For each prerequisite 	n	n	n log(n)
+Search Course	1	n	n
+Total Cost			3n+1
+Runtime			O(n)  
