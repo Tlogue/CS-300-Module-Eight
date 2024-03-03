@@ -1,0 +1,13 @@
+// Print course list in an ascending order from course number
+void printCourseList(const vector<Course>& courses) {
+    // Sort courses by courseNumber
+    vector<Course> sortedCourses = courses;
+    sort(sortedCourses.begin(), sortedCourses.end(), [](const Course& a, const Course& b) {
+        return a.courseNumber < b.courseNumber;
+        });
+
+    // Print the sorted course list
+    for (const auto& course : sortedCourses) {
+        cout << course.courseNumber << ", " << course.courseTitle << endl;
+    }
+}
